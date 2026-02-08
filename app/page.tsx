@@ -13,15 +13,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="mb-16 text-center">
         <h1 className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl">
-          [Your Name]
+        Martin Rojas
         </h1>
         <p className="mb-2 text-xl text-gray-600 dark:text-gray-400">
-          [Your Role/Title]
+          Ingeniero de Software
         </p>
         <p className="mx-auto max-w-2xl text-lg text-gray-700 dark:text-gray-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris.
+        Ingeniero de software enfocado en el diseño y desarrollo de sistemas web, con interés en arquitectura, calidad de código y buenas prácticas. 
+        Aquí comparto proyectos profesionales y académicos, además de notas técnicas y material de docencia de mis cursos.
+
         </p>
       </section>
 
@@ -65,17 +65,17 @@ export default function Home() {
       <section className="rounded-lg bg-gray-100 p-8 text-center dark:bg-gray-800">
         <h2 className="mb-4 text-2xl font-bold">¿Trabajamos juntos?</h2>
         <p className="mb-6 text-gray-700 dark:text-gray-300">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Si te interesa mi trabajo, tienes alguna propuesta o simplemente quieres conversar, no dudes en contactarme.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:mrojascornejo@gmail.com"
             className="rounded-lg bg-gray-900 px-6 py-2 text-white transition-colors hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200"
           >
             Email
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/martin-rojas-c"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg bg-gray-900 px-6 py-2 text-white transition-colors hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200"

@@ -8,25 +8,35 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Portfolio & Blog",
-    template: "%s | Portfolio & Blog",
+    default: "Martin Rojas | Ingeniero de Software",
+    template: "%s | Martin Roja | Ingeniero de Software",
   },
-  description: "Portfolio and blog showcasing projects and thoughts.",
-  keywords: ["engineering", "blog", "portfolio", "software development"],
-  authors: [{ name: "Portfolio" }],
-  creator: "Portfolio",
+  description:
+    "Ingeniero de software enfocado en desarrollo web, arquitectura y buenas prácticas. Portfolio profesional, proyectos académicos y personales, y blog técnico.",
+  keywords: [
+    "ingeniería de software",
+    "desarrollo web",
+    "full stack",
+    "backend",
+    "frontend",
+    "arquitectura de software",
+    "blog técnico",
+    "portfolio desarrollador",
+  ],
+  authors: [{ name: "Martin Rojas" }],
+  creator: "Martin Rojas",
   openGraph: {
     type: "website",
     locale: "es_ES",
     url: "https://yourdomain.com",
-    siteName: "Portfolio & Blog",
-    title: "Portfolio & Blog",
-    description: "Portfolio and blog showcasing projects and thoughts.",
+    siteName: "Martin Rojas | Ingeniero de Software",
+    title: "Martin Rojas | Ingeniero de Software",
+    description: "Ingeniero de software enfocado en desarrollo web, arquitectura y buenas prácticas. Portfolio profesional, proyectos académicos y personales, y blog técnico.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio & Blog",
-    description: "Portfolio and blog showcasing projects and thoughts.",
+    title: "Martin Rojas | Ingeniero de Software",
+    description: "Ingeniero de software enfocado en desarrollo web, arquitectura y buenas prácticas. Portfolio profesional, proyectos académicos y personales, y blog técnico.",
   },
   robots: {
     index: true,

@@ -9,7 +9,7 @@ export default function Header() {
             href="/"
             className="text-xl font-bold text-gray-900 dark:text-white"
           >
-            Portfolio
+            Martin Rojas
           </Link>
           <ul className="flex gap-6">
             <li>
