@@ -1,0 +1,92 @@
+---
+title: "Case Study: Frust — Data & Ops Platform"
+date: "2026-02-08"
+tags: ["case study", "backend", "full stack", "devops", "ci/cd"]
+description: "Case study sobre el desarrollo y mejora de herramientas internas orientadas a datos y operación, con foco en automatización y despliegues rápidos."
+---
+
+## Contexto
+
+Este proyecto surge a partir de la necesidad de mejorar los flujos internos de operación y despliegue, los cuales generaban demoras significativas en la entrega de nuevas funcionalidades.  
+El sistema ya se encontraba en producción y era utilizado por distintos equipos, lo que imponía restricciones claras en términos de estabilidad, compatibilidad y margen de error.
+
+Cualquier mejora debía integrarse de forma progresiva, sin interrumpir la operación diaria ni afectar a los usuarios internos que dependían de estas herramientas.
+
+---
+
+## El problema
+
+Antes de las mejoras, el proceso de despliegue de nuevas features era lento y altamente dependiente de pasos manuales.  
+Esto generaba fricción operativa, aumentaba el riesgo de errores y hacía que pequeñas mejoras tardaran aproximadamente **una semana** en llegar a producción.
+
+Además, parte del flujo de datos públicos no estaba optimizado para su consumo, lo que dificultaba su uso por otros equipos o procesos.
+
+---
+
+## Enfoque y rol
+
+Mi rol en el proyecto fue principalmente **full-stack**, con responsabilidades ocasionales de **DevOps**.
+
+Participé en:
+- Desarrollo y mantención de servicios backend en Python.
+- Implementación y ajuste de interfaces frontend en React para visualización y operación.
+- Automatización del pipeline de CI/CD.
+- Mejoras orientadas a reducir fricción operacional y tiempos de entrega.
+
+El enfoque fue iterativo: identificar cuellos de botella concretos, automatizar donde era posible y validar cada cambio sin comprometer la estabilidad del sistema en producción.
+
+---
+
+## Arquitectura (alto nivel)
+
+La plataforma está compuesta por servicios backend en Python que encapsulan la lógica de negocio y el procesamiento de datos, junto a un frontend en React utilizado para visualización y operación.
+
+La solución se despliega en AWS y se integra a un pipeline de CI/CD que automatiza las etapas de build, test y despliegue.  
+El flujo general es:
+
+1. Ingesta y actualización de datos.
+2. Procesamiento y normalización en backend.
+3. Exposición de información a través de servicios internos.
+4. Consumo desde la interfaz web y procesos operativos.
+
+La arquitectura prioriza despliegues frecuentes, controlados y con bajo riesgo.
+
+---
+
+## Decisiones clave
+
+### Automatizar el pipeline completo
+Se optó por automatizar el flujo de CI/CD para reducir la dependencia de pasos manuales y minimizar errores humanos.  
+Esto permitió estandarizar despliegues y reducir considerablemente el tiempo entre desarrollo y producción.
+
+### Integrar mejoras de forma progresiva
+Dado que el sistema estaba en uso productivo, se decidió evitar cambios disruptivos.  
+Las mejoras se integraron de manera incremental, validando su impacto antes de avanzar con nuevas optimizaciones.
+
+### Priorizar fricción operativa sobre nuevas features
+En lugar de agregar funcionalidades, el foco estuvo en **mejorar lo existente**: tiempos, confiabilidad y facilidad de operación.  
+Esta decisión tuvo un impacto directo en la productividad del equipo.
+
+---
+
+## Resultados
+
+- Reducción del tiempo de despliegue de nuevas features desde aproximadamente **una semana** a **un par de horas**.
+- Automatización efectiva del flujo de CI/CD.
+- Mejora en la disponibilidad y disposición de datos para consumo interno.
+- Disminución de fricción operativa en el día a día del equipo.
+
+Más allá de métricas puntuales, el principal resultado fue un sistema más confiable y fácil de evolucionar.
+
+---
+
+## Aprendizajes
+
+Este proyecto reforzó la importancia de:
+- Automatizar temprano los flujos críticos.
+- Priorizar estabilidad y operación en sistemas en producción.
+- Introducir cambios de forma incremental cuando hay usuarios dependientes del sistema.
+
+Pequeñas mejoras bien dirigidas pueden tener un impacto mayor que grandes cambios estructurales.
+
+---

@@ -13,7 +13,7 @@
     "links": {
       "github": null,
       "demo": null,
-      "writeup": null
+      "writeup": "/blog/frust-data-ops-platform"
     },
     "featured": true,
     "tldr": "Case study de trabajo en entorno productivo: automatización CI/CD y mejoras al flujo de despliegue y disponibilidad de datos.",
