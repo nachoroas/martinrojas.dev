@@ -14,8 +14,10 @@ export default function BlogPage() {
     <div className="container mx-auto px-4 py-12">
       <h1 className="mb-8 text-4xl font-bold">Blog</h1>
       <p className="mb-12 text-lg text-gray-600 dark:text-gray-400">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      En este blog comparto notas técnicas, reflexiones y aprendizajes derivados de proyectos profesionales, académicos y personales.
+      Las entradas abordan decisiones de diseño, experiencias de implementación y conceptos de ingeniería de software desde una perspectiva práctica.
+      El contenido está pensado como documentación viva y como espacio para profundizar en temas específicos.
+
       </p>
 
       {tags.length > 0 && (

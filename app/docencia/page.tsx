@@ -14,8 +14,10 @@ export default function TeachingPage() {
     <div className="container mx-auto px-4 py-12">
       <h1 className="mb-8 text-4xl font-bold">Docencia</h1>
       <p className="mb-12 text-lg text-gray-600 dark:text-gray-400">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+      Esta sección reúne material de docencia y recursos educativos desarrollados en contextos académicos.
+      Incluye apuntes, laboratorios y ejemplos prácticos enfocados en la comprensión de conceptos fundamentales de computación y desarrollo de software.
+      El objetivo es apoyar el aprendizaje a través de material claro, estructurado y orientado a la práctica.
+
       </p>
 
       <div className="space-y-8">
