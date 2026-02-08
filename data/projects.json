@@ -1,244 +1,219 @@
 [
   {
-    "slug": "web-application",
-    "title": "Web Application",
+    "slug": "frust-data-ops-platform",
+    "title": "Frust — Data & Ops Platform (Case Study)",
     "type": "Professional",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+    "summary": "Desarrollo full-stack y soporte DevOps para herramientas internas orientadas a datos y operación, con foco en automatización y despliegues rápidos.",
+    "stack": ["Python", "React", "AWS", "CI/CD"],
     "highlights": [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt"
+      "Reducción del tiempo de despliegue de features: ~1 semana → pocas horas",
+      "Automatización de flujo CI/CD para acelerar entregas",
+      "Mejoras en disponibilidad/consumo de data pública (detalle interno)"
     ],
     "links": {
-      "github": "https://github.com/yourusername/web-application",
-      "demo": "https://demo.example.com",
-      "writeup": null
-    },
-    "featured": true,
-    "tldr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "myRole": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "architecture": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "keyDecisions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore",
-      "Ut enim ad minim veniam, quis nostrud exercitation"
-    ],
-    "results": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    "slug": "data-analysis-project",
-    "title": "Data Analysis Project",
-    "type": "Academic",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["Python", "SQL", "PostgreSQL", "Data Analysis"],
-    "highlights": [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt"
-    ],
-    "links": {
-      "github": "https://github.com/yourusername/data-analysis-project",
+      "github": null,
       "demo": null,
       "writeup": null
     },
     "featured": true,
-    "tldr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "myRole": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "architecture": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "tldr": "Case study de trabajo en entorno productivo: automatización CI/CD y mejoras al flujo de despliegue y disponibilidad de datos.",
+    "context": "El proyecto nace a partir de la necesidad de mejorar los flujos internos de operación y despliegue, los cuales generaban demoras significativas en la entrega de nuevas funcionalidades. El sistema ya se encontraba en producción y era utilizado por distintos equipos, lo que imponía restricciones de estabilidad, compatibilidad y bajo margen de error. Cualquier mejora debía integrarse de forma progresiva y sin afectar la operación existente.",
+    "myRole": "Full-stack (Python/React) con responsabilidades ocasionales de DevOps y automatización de despliegues.",
+    "architecture": "TBD",
     "keyDecisions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore",
-      "Ut enim ad minim veniam, quis nostrud exercitation"
+      "Estandarizar y automatizar pasos del pipeline CI/CD para reducir tiempo de entrega",
+      "Optimizar el flujo de despliegue para reducir fricción operacional"
     ],
-    "results": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "results": "Reducción del tiempo de despliegue de nuevas features desde aproximadamente una semana a un par de horas."
   },
   {
-    "slug": "card-game-application",
-    "title": "Card Game Application",
-    "type": "Academic",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["Java", "OOP", "Design Patterns"],
+    "slug": "chatbot-aza-document-analysis",
+    "title": "ChatBot AZA — Document Analysis Assistant",
+    "type": "Professional",
+    "summary": "Asistente de IA que responde preguntas sobre conocimiento interno a partir de documentos especializados de la empresa.",
+    "stack": ["ChatGPT", "LangChain", "MongoDB", "NLP"],
     "highlights": [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt"
+      "QA sobre documentos especializados (input: pregunta, output: respuesta con contexto)",
+      "Orquestación de flujo con LangChain y persistencia en MongoDB",
+      "Ahorro significativo de tiempo de respuesta frente a la búsqueda manual"
     ],
     "links": {
-      "github": "https://github.com/yourusername/card-game-application",
+      "github": null,
+      "demo": null,
+      "writeup": null
+    },
+    "featured": true,
+    "tldr": "Chatbot para consultas internas basado en documentos, orientado a ahorrar tiempo y acelerar el acceso a información relevante.",
+    "context": "El proyecto surge ante la dificultad de acceder rápidamente a información relevante contenida en múltiples documentos especializados. El proceso manual de búsqueda implicaba tiempos elevados y dependencia de personas con conocimiento previo del material. Se buscaba una solución que redujera esta fricción y facilitara el acceso al conocimiento interno de forma centralizada.",
+    "myRole": "Gestor del equipo (coordinación, definición de alcance y empuje de implementación).",
+    "architecture": "TBD",
+    "keyDecisions": [
+      "Usar un flujo RAG (búsqueda en documentos + generación) para responder preguntas específicas",
+      "Persistir información/estado en MongoDB para operación y trazabilidad"
+    ],
+    "results": "Se logró reducir significativamente el tiempo de respuesta frente al proceso manual previo."
+  },
+  {
+    "slug": "cc3201-anime-data-based-query",
+    "title": "CC3201 — Anime Data Based Query",
+    "type": "Academic",
+    "summary": "Aplicación web para explorar y consultar una base de datos, con filtros y personalización de búsquedas.",
+    "stack": ["Django", "PostgreSQL", "JavaScript", "HTML", "CSS"],
+    "highlights": [
+      "Filtros sobre base de datos para consultas",
+      "Personalización de filtros para refinar resultados",
+      "Enfoque en velocidad de respuesta de consultas"
+    ],
+    "links": {
+      "github": "https://github.com/nachoroas/CC3201-Anime-data-based-query",
+      "demo": null,
+      "writeup": null
+    },
+    "featured": true,
+    "tldr": "Plataforma web para consultas rápidas sobre un dataset, con filtros configurables y backend + DB integrados.",
+    "context": "Este proyecto se desarrolló en el contexto de un curso de bases de datos, con el objetivo de aplicar conceptos de modelado, consultas y desarrollo web. El alcance estaba limitado a la exploración y consulta eficiente de un dataset, priorizando la correcta integración entre backend, base de datos y frontend.",
+    "myRole": "Desarrollo completo del proyecto, desde el modelado de la base de datos hasta el frontend.",
+    "architecture": "TBD",
+    "keyDecisions": ["Optimizar consultas y filtros para mejorar velocidad percibida"],
+    "results": "Se priorizó velocidad de consultas y filtrado para mejorar la experiencia de exploración."
+  },
+  {
+    "slug": "simple-frontend-flow",
+    "title": "Simple Frontend Flow",
+    "type": "Professional",
+    "summary": "Flujo frontend de compra de giftcards con monedas, diseñado para usuarios con baja alfabetización digital e incluyendo manejo de errores simulados.",
+    "stack": ["TypeScript", "React", "UI/UX", "Error Handling"],
+    "highlights": [
+      "UI adaptada para usuarios con poca alfabetización",
+      "Manejo de errores y estados (incluye errores simulados)",
+      "Flujo de compra claro y guiado"
+    ],
+    "links": {
+      "github": "https://github.com/nachoroas/Simple-Frontend-Flow",
       "demo": null,
       "writeup": null
     },
     "featured": false,
-    "tldr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "myRole": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "architecture": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "tldr": "Implementación de un flujo de compra frontend con foco en UX inclusiva y manejo robusto de errores.",
+    "context": "Este proyecto fue realizado como parte de una entrevista técnica para una empresa de tecnología. El objetivo era evaluar mis habilidades en el desarrollo de interfaces de usuario y la implementación de flujos de trabajo robustos.",
+    "myRole": "Implementación end-to-end del flujo y experiencia de usuario.",
+    "architecture": "TBD",
     "keyDecisions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore",
-      "Ut enim ad minim veniam, quis nostrud exercitation"
+      "Priorizar claridad de interacción sobre complejidad visual",
+      "Simular errores para validar resiliencia de la UI y mensajes al usuario"
     ],
-    "results": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "results": "TBD"
   },
   {
-    "slug": "algorithm-implementation",
-    "title": "Algorithm Implementation",
+    "slug": "personal-engineering-blog-platform",
+    "title": "Personal Engineering Blog Platform",
+    "type": "Personal",
+    "summary": "Plataforma estática de portfolio + blog construida con Next.js y MDX, enfocada en utilidad, mantenibilidad y diseño minimalista.",
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "MDX", "SEO"],
+    "highlights": [
+      "Contenido en MDX (blog y docencia) sin backend propio",
+      "Proyectos desde JSON + filtros por categoría",
+      "SEO listo: metadata, OpenGraph, sitemap y robots"
+    ],
+    "links": {
+      "github": "https://github.com/nachoroas/TBD",
+      "demo": null,
+      "writeup": null
+    },
+    "featured": false,
+    "tldr": "Starter de portfolio/blog estático con Next.js App Router, MDX y data local.",
+    "context": "El objetivo es una página personal estilo blog/portfolio: proyectos, docencia y contacto, sin API propia.",
+    "myRole": "Implementación end-to-end: estructura, contenido, UI components y SEO.",
+    "architecture": "Next.js App Router (static-first) + MDX para contenido + JSON para proyectos. Componentes reutilizables y estilos con Tailwind.",
+    "keyDecisions": [
+      "Priorizar sitio estático sin API propia para simplicidad y costo cero",
+      "Usar MDX para posts y docencia para escribir contenido técnico con componentes",
+      "Centralizar proyectos en JSON para iteración rápida"
+    ],
+    "results": "Lanzamiento inicial con 3 posts genéricos (lorem ipsum) como template."
+  },
+  {
+    "slug": "cc-3002-gwen-t-card-game",
+    "title": "CC-3002 — Gwen T Card Game",
     "type": "Academic",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "summary": "Juego de cartas implementado con foco en extensibilidad, aplicando patrones de diseño y buenas prácticas de ingeniería de software.",
+    "stack": ["Scala", "OOP", "Design Patterns", "Clean Code"],
+    "highlights": [
+      "Patrones aplicados: Template, Singleton, State, Observer",
+      "Arquitectura pensada para extensibilidad",
+      "Implementación completa realizada por mí"
+    ],
+    "links": {
+      "github": "https://github.com/nachoroas/CC-3002-Gwen-t-card-game",
+      "demo": null,
+      "writeup": null
+    },
+    "featured": false,
+    "tldr": "Juego de cartas orientado a extensibilidad y calidad de diseño mediante patrones y buenas prácticas.",
+    "context": "Este proyecto fue desarrollado en el contexto de un curso universitario, cuyo objetivo era aplicar de forma práctica los conceptos vistos en clases. El trabajo requería diseñar e implementar una solución funcional dentro de un alcance acotado y con plazos definidos. El foco estaba en demostrar comprensión técnica más que en construir un producto final para producción. ",
+    "myRole": "Implementación completa del proyecto (diseño + código).",
+    "architecture": "TBD",
+    "keyDecisions": [
+      "Aplicar patrones para separar responsabilidades y facilitar extensión",
+      "Diseñar el flujo del juego como estados para hacer reglas más mantenibles"
+    ],
+    "results": "Mejorable en extensibilidad (aprendizaje clave del proyecto)."
+  },
+  {
+    "slug": "cc4102-dijkstra-amortized-analysis",
+    "title": "CC4102 — Dijkstra with Amortized Analysis",
+    "type": "Academic",
+    "summary": "Comparación de implementaciones de Dijkstra midiendo tiempos de ejecución para evaluar rendimiento en distintos escenarios.",
     "stack": ["C++", "Algorithms", "Data Structures"],
     "highlights": [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt"
+      "Comparación de distintas implementaciones de Dijkstra",
+      "Métrica principal: tiempo de ejecución",
+      "Resultado: heap mejor en la mayoría de casos"
     ],
     "links": {
-      "github": "https://github.com/yourusername/algorithm-implementation",
+      "github": "https://github.com/nachoroas/CC4102-Dijkstra-w-amortized-analysis",
       "demo": null,
       "writeup": null
     },
     "featured": false,
-    "tldr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "myRole": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "architecture": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "tldr": "Estudio comparativo del rendimiento de Dijkstra, enfocándose en mediciones y análisis.",
+    "context": "Este proyecto fue desarrollado en el contexto de un curso universitario, cuyo objetivo era aplicar de forma práctica los conceptos vistos en clases. El trabajo requería diseñar e implementar una solución funcional dentro de un alcance acotado y con plazos definidos. El foco estaba en demostrar comprensión técnica más que en construir un producto final para producción.",
+    "myRole": "TBD",
+    "architecture": "TBD",
     "keyDecisions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore",
-      "Ut enim ad minim veniam, quis nostrud exercitation"
+      "Elegir medición por tiempo para comparar implementaciones bajo escenarios similares"
     ],
-    "results": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    "results": "En la mayoría de casos evaluados, la implementación con heap mostró mejor rendimiento."
   },
   {
-    "slug": "web-development-project",
-    "title": "Web Development Project",
+    "slug": "cc5408-dark-lotus",
+    "title": "CC5408 — Dark Lotus",
     "type": "Academic",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["JavaScript", "Node.js", "Express", "MongoDB"],
+    "summary": "Proyecto de videojuego en Godot enfocado en level design y mecánicas, explorando efectos de perspectiva en entorno y enemigos.",
+    "stack": ["Godot", "GDScript", "Game Development"],
     "highlights": [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt"
+      "Level design y diseño de mecánicas",
+      "Cambio de perspectiva que afecta al ambiente y enemigos"
     ],
-    "links": {
-      "github": "https://github.com/yourusername/web-development-project",
-      "demo": null,
-      "writeup": null
-    },
-    "featured": false,
-    "tldr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "myRole": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "architecture": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "keyDecisions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore",
-      "Ut enim ad minim veniam, quis nostrud exercitation"
-    ],
-    "results": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    "slug": "machine-learning-project",
-    "title": "Machine Learning Project",
-    "type": "Academic",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["Python", "Machine Learning", "Data Science"],
-    "highlights": [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt"
-    ],
-    "links": {
-      "github": "https://github.com/yourusername/machine-learning-project",
-      "demo": null,
-      "writeup": null
-    },
-    "featured": false,
-    "tldr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "myRole": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "architecture": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "keyDecisions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore",
-      "Ut enim ad minim veniam, quis nostrud exercitation"
-    ],
-    "results": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    "slug": "game-development-project",
-    "title": "Game Development Project",
-    "type": "Personal",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["TypeScript", "React", "Game Development"],
-    "highlights": [
-      "Lorem ipsum dolor sit amet",
-      "Consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt"
-    ],
-    "links": {
-      "github": "https://github.com/yourusername/game-development-project",
-      "demo": "https://demo.example.com",
-      "writeup": null
-    },
-    "featured": true,
-    "tldr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "context": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "myRole": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "architecture": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "keyDecisions": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      "Sed do eiusmod tempor incididunt ut labore et dolore",
-      "Ut enim ad minim veniam, quis nostrud exercitation"
-    ],
-    "results": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  },
-  {
-    "slug": "project-placeholder-1",
-    "title": "Project Placeholder 1",
-    "type": "Personal",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["TBD"],
-    "highlights": ["TBD"],
     "links": {
       "github": null,
       "demo": null,
       "writeup": null
     },
     "featured": false,
-    "tldr": "TBD",
-    "context": "TBD",
-    "myRole": "TBD",
+    "tldr": "Juego simple en Godot con mecánicas influenciadas por cambios de perspectiva.",
+    "context": "Este proyecto fue desarrollado en el contexto de un curso universitario, cuyo objetivo era aplicar de forma práctica los conceptos vistos en clases. El trabajo requería diseñar e implementar una solución funcional dentro de un alcance acotado y con plazos definidos. El foco estaba en demostrar comprensión técnica más que en construir un producto final para producción.",
+    "myRole": "Level design y mecánicas principales.",
     "architecture": "TBD",
-    "keyDecisions": ["TBD"],
+    "keyDecisions": [
+      "Usar cambios de perspectiva como mecánica central para afectar gameplay"
+    ],
     "results": "TBD"
   },
   {
-    "slug": "project-placeholder-2",
-    "title": "Project Placeholder 2",
+    "slug": "tbd-backend-case-study",
+    "title": "TBD — Backend Case Study",
     "type": "Professional",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "stack": ["TBD"],
-    "highlights": ["TBD"],
-    "links": {
-      "github": null,
-      "demo": null,
-      "writeup": null
-    },
-    "featured": false,
-    "tldr": "TBD",
-    "context": "TBD",
-    "myRole": "TBD",
-    "architecture": "TBD",
-    "keyDecisions": ["TBD"],
-    "results": "TBD"
-  },
-  {
-    "slug": "project-placeholder-3",
-    "title": "Project Placeholder 3",
-    "type": "Personal",
     "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "stack": ["TBD"],
     "highlights": ["TBD"],
