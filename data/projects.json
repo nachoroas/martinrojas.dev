@@ -19,7 +19,7 @@
     "tldr": "Case study de trabajo en entorno productivo: automatización CI/CD y mejoras al flujo de despliegue y disponibilidad de datos.",
     "context": "El proyecto nace a partir de la necesidad de mejorar los flujos internos de operación y despliegue, los cuales generaban demoras significativas en la entrega de nuevas funcionalidades. El sistema ya se encontraba en producción y era utilizado por distintos equipos, lo que imponía restricciones de estabilidad, compatibilidad y bajo margen de error. Cualquier mejora debía integrarse de forma progresiva y sin afectar la operación existente.",
     "myRole": "Full-stack (Python/React) con responsabilidades ocasionales de DevOps y automatización de despliegues.",
-    "architecture": "TBD",
+    "architecture": "Plataforma interna compuesta por servicios backend en Python que encapsulan la lógica de negocio y procesamiento de datos, junto a un frontend en React para visualización y operación. La solución se despliega en AWS y se integra a un pipeline CI/CD que automatiza build, test y despliegue. El flujo principal considera ingesta y actualización de datos, procesamiento en backend y consumo desde la interfaz web y procesos operativos, priorizando despliegues frecuentes y confiables.",
     "keyDecisions": [
       "Estandarizar y automatizar pasos del pipeline CI/CD para reducir tiempo de entrega",
       "Optimizar el flujo de despliegue para reducir fricción operacional"
@@ -46,7 +46,7 @@
     "tldr": "Chatbot para consultas internas basado en documentos, orientado a ahorrar tiempo y acelerar el acceso a información relevante.",
     "context": "El proyecto surge ante la dificultad de acceder rápidamente a información relevante contenida en múltiples documentos especializados. El proceso manual de búsqueda implicaba tiempos elevados y dependencia de personas con conocimiento previo del material. Se buscaba una solución que redujera esta fricción y facilitara el acceso al conocimiento interno de forma centralizada.",
     "myRole": "Gestor del equipo (coordinación, definición de alcance y empuje de implementación).",
-    "architecture": "TBD",
+    "architecture": "Sistema basado en un enfoque RAG (retrieval-augmented generation) donde las preguntas del usuario se procesan mediante un pipeline orquestado con LangChain. El flujo incluye recuperación de contexto desde documentos especializados, construcción dinámica de prompts y generación de respuestas con un modelo LLM. MongoDB se utiliza para persistir conversaciones, metadatos y referencias, permitiendo trazabilidad y reutilización de información.",
     "keyDecisions": [
       "Usar un flujo RAG (búsqueda en documentos + generación) para responder preguntas específicas",
       "Persistir información/estado en MongoDB para operación y trazabilidad"
@@ -73,7 +73,7 @@
     "tldr": "Plataforma web para consultas rápidas sobre un dataset, con filtros configurables y backend + DB integrados.",
     "context": "Este proyecto se desarrolló en el contexto de un curso de bases de datos, con el objetivo de aplicar conceptos de modelado, consultas y desarrollo web. El alcance estaba limitado a la exploración y consulta eficiente de un dataset, priorizando la correcta integración entre backend, base de datos y frontend.",
     "myRole": "Desarrollo completo del proyecto, desde el modelado de la base de datos hasta el frontend.",
-    "architecture": "TBD",
+    "architecture": "Aplicación web con arquitectura clásica cliente-servidor. El backend en Django se conecta a una base de datos PostgreSQL para modelar y consultar el dataset, mientras que el frontend en JavaScript, HTML y CSS permite definir filtros y visualizar resultados. El flujo principal consiste en la selección de filtros por parte del usuario, ejecución de consultas parametrizadas en el backend y renderizado dinámico de los resultados en la interfaz.",
     "keyDecisions": ["Optimizar consultas y filtros para mejorar velocidad percibida"],
     "results": "Se priorizó velocidad de consultas y filtrado para mejorar la experiencia de exploración."
   },
@@ -97,12 +97,13 @@
     "tldr": "Implementación de un flujo de compra frontend con foco en UX inclusiva y manejo robusto de errores.",
     "context": "Este proyecto fue realizado como parte de una entrevista técnica para una empresa de tecnología. El objetivo era evaluar mis habilidades en el desarrollo de interfaces de usuario y la implementación de flujos de trabajo robustos.",
     "myRole": "Implementación end-to-end del flujo y experiencia de usuario.",
-    "architecture": "TBD",
+    "architecture": "Aplicación frontend desarrollada en React y TypeScript, organizada en componentes reutilizables y un flujo de pasos tipo wizard que guía el proceso de compra. La lógica de estado controla validaciones, errores y transiciones entre pantallas, incluyendo la simulación de fallos para evaluar resiliencia. Se separa la capa de presentación, la gestión de estado y los servicios simulados para facilitar mantenimiento y testeo.",
     "keyDecisions": [
       "Priorizar claridad de interacción sobre complejidad visual",
       "Simular errores para validar resiliencia de la UI y mensajes al usuario"
     ],
-    "results": "TBD"
+    "results": "El flujo de compra se completó de extremo a extremo, incluyendo manejo de estados de carga y simulación de errores de funcionamiento y timeout. El diseño permitió que usuarios con poca alfabetización digital pudieran completar el proceso sin asistencia, validando el enfoque de UX guiado. El entrevistador destacó positivamente la solución frente a otras implementaciones."
+
   },
   {
     "slug": "personal-engineering-blog-platform",
@@ -116,7 +117,7 @@
       "SEO listo: metadata, OpenGraph, sitemap y robots"
     ],
     "links": {
-      "github": "https://github.com/nachoroas/TBD",
+      "github": "https://github.com/nachoroas/nextjs-portfolio-blog-template",
       "demo": null,
       "writeup": null
     },
@@ -124,13 +125,13 @@
     "tldr": "Starter de portfolio/blog estático con Next.js App Router, MDX y data local.",
     "context": "El objetivo es una página personal estilo blog/portfolio: proyectos, docencia y contacto, sin API propia.",
     "myRole": "Implementación end-to-end: estructura, contenido, UI components y SEO.",
-    "architecture": "Next.js App Router (static-first) + MDX para contenido + JSON para proyectos. Componentes reutilizables y estilos con Tailwind.",
+    "architecture": "Sitio estático construido con Next.js App Router, donde el contenido del blog y docencia se gestiona mediante archivos MDX y los proyectos mediante un JSON local. En tiempo de build se generan rutas estáticas, metadata SEO y tiempos de lectura. La interfaz se compone de componentes reutilizables estilizados con Tailwind CSS, priorizando simplicidad, mantenibilidad y despliegue sin backend propio.",
     "keyDecisions": [
       "Priorizar sitio estático sin API propia para simplicidad y costo cero",
       "Usar MDX para posts y docencia para escribir contenido técnico con componentes",
       "Centralizar proyectos en JSON para iteración rápida"
     ],
-    "results": "Lanzamiento inicial con 3 posts genéricos (lorem ipsum) como template."
+    "results": "La plataforma funciona correctamente en desarrollo y build, integrando MDX para contenido, filtros de proyectos y soporte de dark mode. El resultado es una template funcional que ya está siendo utilizada como base real del sitio, permitiendo iterar sobre contenido y diseño sin agregar complejidad técnica adicional."
   },
   {
     "slug": "cc-3002-gwen-t-card-game",
@@ -152,12 +153,13 @@
     "tldr": "Juego de cartas orientado a extensibilidad y calidad de diseño mediante patrones y buenas prácticas.",
     "context": "Este proyecto fue desarrollado en el contexto de un curso universitario, cuyo objetivo era aplicar de forma práctica los conceptos vistos en clases. El trabajo requería diseñar e implementar una solución funcional dentro de un alcance acotado y con plazos definidos. El foco estaba en demostrar comprensión técnica más que en construir un producto final para producción. ",
     "myRole": "Implementación completa del proyecto (diseño + código).",
-    "architecture": "TBD",
+    "architecture": "Arquitectura orientada a objetos que separa el motor del juego, el estado de la partida, las entidades y las reglas. Se aplican patrones de diseño como State para modelar fases y turnos, Observer para reaccionar a eventos, Template Method para flujos comunes y Singleton para componentes globales controlados. La estructura busca facilitar la extensibilidad y el mantenimiento del código.",
     "keyDecisions": [
       "Aplicar patrones para separar responsabilidades y facilitar extensión",
       "Diseñar el flujo del juego como estados para hacer reglas más mantenibles"
     ],
-    "results": "Mejorable en extensibilidad (aprendizaje clave del proyecto)."
+  "results": "El juego es completamente jugable y fue diseñado para permitir la incorporación de nuevas cartas, reglas y comportamientos sin modificar el core del sistema. Se alcanzó cobertura total de tests, validando la arquitectura y la correcta aplicación de patrones de diseño. El principal resultado fue una base extensible y mantenible."
+
   },
   {
     "slug": "cc4102-dijkstra-amortized-analysis",
@@ -178,12 +180,13 @@
     "featured": false,
     "tldr": "Estudio comparativo del rendimiento de Dijkstra, enfocándose en mediciones y análisis.",
     "context": "Este proyecto fue desarrollado en el contexto de un curso universitario, cuyo objetivo era aplicar de forma práctica los conceptos vistos en clases. El trabajo requería diseñar e implementar una solución funcional dentro de un alcance acotado y con plazos definidos. El foco estaba en demostrar comprensión técnica más que en construir un producto final para producción.",
-    "myRole": "TBD",
-    "architecture": "TBD",
+    "myRole": "Implementación del algoritmo de Dijkstra con distintas estructuras de datos, instrumentación para medición de tiempos y análisis comparativo de rendimiento.",
+    "architecture": "Implementación modular en C++ que permite intercambiar la estructura de datos utilizada por el algoritmo de Dijkstra para la cola de prioridad. El sistema separa la carga del grafo, la ejecución del algoritmo, la medición de tiempos y el registro de resultados. Esto permite ejecutar múltiples escenarios comparables y analizar el rendimiento bajo distintas configuraciones.",
     "keyDecisions": [
       "Elegir medición por tiempo para comparar implementaciones bajo escenarios similares"
     ],
-    "results": "En la mayoría de casos evaluados, la implementación con heap mostró mejor rendimiento."
+    "results": "Las pruebas mostraron que la implementación con heap obtuvo mejor rendimiento en la mayoría de los escenarios evaluados. Se compararon búsquedas con tamaños que variaron aproximadamente entre 2 y 64 nodos, obteniendo resultados reproducibles al ejecutar los benchmarks. La conclusión principal fue que la optimización del algoritmo depende fuertemente de la implementación concreta."
+
   },
   {
     "slug": "cc5408-dark-lotus",
@@ -196,7 +199,7 @@
       "Cambio de perspectiva que afecta al ambiente y enemigos"
     ],
     "links": {
-      "github": null,
+      "github": "https://github.com/nachoroas/CC5408-DarkLotus",
       "demo": null,
       "writeup": null
     },
@@ -204,11 +207,12 @@
     "tldr": "Juego simple en Godot con mecánicas influenciadas por cambios de perspectiva.",
     "context": "Este proyecto fue desarrollado en el contexto de un curso universitario, cuyo objetivo era aplicar de forma práctica los conceptos vistos en clases. El trabajo requería diseñar e implementar una solución funcional dentro de un alcance acotado y con plazos definidos. El foco estaba en demostrar comprensión técnica más que en construir un producto final para producción.",
     "myRole": "Level design y mecánicas principales.",
-    "architecture": "TBD",
+    "architecture": "Proyecto desarrollado en Godot siguiendo una estructura basada en escenas y nodos. Las mecánicas principales se implementan mediante scripts asociados a entidades del juego, comunicadas a través de señales. El sistema de cambio de perspectiva afecta tanto al entorno como al comportamiento de los enemigos, manteniendo separadas la lógica de control, interacción y diseño de niveles para facilitar iteración en gameplay.",
     "keyDecisions": [
       "Usar cambios de perspectiva como mecánica central para afectar gameplay"
     ],
-    "results": "TBD"
+"results": "Se implementó un prototipo jugable centrado en una mecánica de cambio de perspectiva, donde el entorno y los enemigos se ven afectados dinámicamente. El resultado principal fue una experiencia experimental en la que el jugador nunca puede anticipar completamente lo que encontrará al cambiar la perspectiva, validando la mecánica como elemento central del gameplay."
+
   },
   {
     "slug": "tbd-backend-case-study",
