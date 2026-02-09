@@ -12,7 +12,7 @@ The site is built with Next.js and deployed as a static site.
 
 ## 🌐 Live Site
 
-👉 https://your-domain.dev
+👉 [https://your-domain.dev](https://martinrojas-dev.vercel.app)
 
 ---
 
