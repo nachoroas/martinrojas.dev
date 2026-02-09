@@ -1,0 +1,79 @@
+---
+title: "Case Study: ChatBot AZA — Document Analysis Assistant"
+date: "2026-02-08"
+tags: ["case study", "ia", "nlp", "llm", "automatización"]
+description: "Case study sobre el desarrollo de un asistente de IA para consultas sobre documentos especializados, orientado a reducir tiempos de respuesta y fricción operativa."
+---
+
+## Contexto
+
+Este proyecto surge ante la dificultad de acceder rápidamente a información relevante contenida en documentos especializados de la empresa.  
+El proceso existente dependía de búsquedas manuales y del conocimiento previo de las personas sobre el material, lo que generaba tiempos de respuesta elevados y fricción operativa.
+
+La necesidad principal era contar con una herramienta que facilitara el acceso al conocimiento interno de forma centralizada y eficiente.
+
+---
+
+## El problema
+
+La información clave se encontraba distribuida en múltiples documentos, sin un mecanismo simple para realizar consultas directas.  
+Responder preguntas específicas requería tiempo y experiencia previa, lo que impactaba negativamente en la velocidad de respuesta y en la productividad del equipo.
+
+Además, el volumen y especialización del contenido hacía inviable una solución basada únicamente en búsqueda tradicional por palabras clave.
+
+---
+
+## Enfoque y rol
+
+Mi rol en el proyecto fue el de **gestor del equipo**, coordinando el alcance, priorización y dirección técnica del desarrollo.
+
+El enfoque consistió en construir un **MVP funcional** que validara rápidamente la utilidad de un asistente basado en IA, capaz de responder preguntas específicas a partir de documentos internos, sin requerir cambios complejos en la infraestructura existente.
+
+---
+
+## Arquitectura (alto nivel)
+
+El sistema sigue un enfoque de **retrieval-augmented generation (RAG)**.  
+Ante una pregunta del usuario, el flujo general es:
+
+1. Recepción de la consulta.
+2. Recuperación de contexto relevante desde documentos especializados.
+3. Construcción dinámica del prompt con dicho contexto.
+4. Generación de la respuesta mediante un modelo LLM.
+5. Persistencia de la interacción para trazabilidad.
+
+LangChain se utilizó para orquestar el pipeline completo, mientras que MongoDB permitió almacenar conversaciones, metadatos y referencias a los documentos utilizados.
+
+---
+
+## Decisiones clave
+
+### Priorizar un MVP funcional
+Se decidió enfocar el esfuerzo en validar el caso de uso antes de optimizar o ampliar la solución.  
+Esto permitió obtener feedback temprano y confirmar que el enfoque resolvía el problema principal.
+
+### Usar un enfoque RAG en lugar de respuestas genéricas
+Para evitar respuestas imprecisas o fuera de contexto, se optó por recuperar información específica desde los documentos antes de generar la respuesta, mejorando la relevancia y utilidad del asistente.
+
+### Centralizar la trazabilidad de las consultas
+Persistir las interacciones permitió entender qué tipo de preguntas se realizaban y evaluar oportunidades de mejora futuras.
+
+---
+
+## Resultados
+
+- MVP funcional capaz de responder preguntas sobre documentos especializados.
+- Reducción significativa del tiempo necesario para obtener información relevante.
+- Disminución de la dependencia de personas con conocimiento previo del material.
+- Validación del asistente como herramienta útil para el acceso a conocimiento interno.
+
+---
+
+## Aprendizajes
+
+Este proyecto reforzó la importancia de:
+- Validar soluciones de IA con casos de uso concretos.
+- Priorizar relevancia y contexto por sobre respuestas genéricas.
+- Construir prototipos funcionales que permitan aprender rápido antes de escalar.
+
+---
