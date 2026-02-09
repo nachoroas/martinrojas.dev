@@ -51,25 +51,7 @@ export default function ContactPage() {
         <div className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:bg-gray-800">
           <h2 className="mb-4 text-xl font-semibold">Formulario de Contacto</h2>
           <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-            Opcional: Integra un servicio como{" "}
-            <a
-              href="https://formspree.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-900 underline dark:text-gray-100"
-            >
-              Formspree
-            </a>{" "}
-            o{" "}
-            <a
-              href="https://getform.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-900 underline dark:text-gray-100"
-            >
-              Getform
-            </a>{" "}
-            para habilitar un formulario de contacto.
+            TBD
           </p>
           <form
             action="https://formspree.io/f/YOUR_FORM_ID"
