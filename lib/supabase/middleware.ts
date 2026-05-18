@@ -26,7 +26,17 @@ export async function updateSession(request: NextRequest) {
   );
 
   // Refresh session — do not add logic between createServerClient and getUser
-  await supabase.auth.getUser();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  const isAdminRoute =
+    request.nextUrl.pathname.startsWith("/admin") &&
+    !request.nextUrl.pathname.startsWith("/admin/login");
+
+  if (isAdminRoute && !user) {
+    const loginUrl = request.nextUrl.clone();
+    loginUrl.pathname = "/admin/login";
+    return NextResponse.redirect(loginUrl);
+  }
 
   return supabaseResponse;
 }
